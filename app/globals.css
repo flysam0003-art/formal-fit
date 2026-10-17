@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
-:root{--background:#f6f8fb;--foreground:#17202f;--card:#fff;--muted:#64748b;--line:#e7ebf1;--primary:#155eef;--primary-soft:#e8f0ff;--success:#0c9f6e;--warning:#d38310}
-*{box-sizing:border-box}body{margin:0;background:var(--background);color:var(--foreground);font-family:'IBM Plex Sans Arabic','Cairo',sans-serif}button,input{font:inherit}
+
+:root { color-scheme: light; --background: #f7f6f2; --foreground: #152d35; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: 'IBM Plex Sans Arabic', 'Cairo', sans-serif; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid #d6a13a; outline-offset: 3px; }
