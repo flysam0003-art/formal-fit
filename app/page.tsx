@@ -5,17 +5,17 @@ import { useMemo, useState } from "react"
 import { Bell, BriefcaseBusiness, ChevronDown, CircleHelp, FileCheck2, Home, LayoutGrid, Menu, MessageSquare, Search, Settings, ShieldCheck, Star, WalletCards, X, ArrowUpLeft, Plus, Sparkles } from "lucide-react"
 
 const services = [
-  { title: "تصميم هوية بصرية", category: "تصميم وإبداع", provider: "استوديو مدار", price: "ابتداءً من 1,200 ر.س", rating: "4.9", color: "#f4e7c4", icon: "✦" },
-  { title: "تطوير متجر إلكتروني", category: "تقنية وبرمجة", provider: "حلول نمو", price: "ابتداءً من 2,500 ر.س", rating: "4.8", color: "#dcebe7", icon: "⌘" },
-  { title: "استشارات قانونية", category: "أعمال وقانون", provider: "مكتب أساس", price: "ابتداءً من 350 ر.س", rating: "5.0", color: "#e8e0f1", icon: "§" },
+  { title: "سكر أبيض مكرر ICUMSA 45", category: "البرازيل · ميناء سانتوس", provider: "مورد موثّق", price: "عرض سعر عند الطلب", rating: "4.9", color: "#f4e7c4", icon: "S" },
+  { title: "توريد السكر للمؤسسات", category: "الخليج العربي · عقود دورية", provider: "فريق وسيط التجاري", price: "طلب تفاوض", rating: "4.8", color: "#dcebe7", icon: "W" },
+  { title: "فحص وشحن المستندات", category: "توثيق · شحن دولي", provider: "مكتب التجارة بدبي", price: "خدمة مضافة", rating: "5.0", color: "#e8e0f1", icon: "✓" },
 ]
 
 const nav = [
   { label: "نظرة عامة", icon: Home },
-  { label: "الخدمات", icon: LayoutGrid },
-  { label: "طلباتي", icon: BriefcaseBusiness },
-  { label: "الرسائل", icon: MessageSquare },
-  { label: "المحفظة", icon: WalletCards },
+  { label: "الفرص التجارية", icon: LayoutGrid },
+  { label: "طلباتي التجارية", icon: BriefcaseBusiness },
+  { label: "غرفة الصفقة", icon: MessageSquare },
+  { label: "المستندات", icon: WalletCards },
 ]
 
 export default function HomePage() {
@@ -29,7 +29,7 @@ export default function HomePage() {
       <aside className={`fixed inset-y-0 right-0 z-30 flex w-[272px] flex-col border-l border-[#dce5e2] bg-[#10343b] px-5 py-6 text-white transition-transform lg:translate-x-0 ${menuOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="mb-12 flex items-center justify-between px-2">
           <div className="flex items-center gap-3">
-            <Image src="/brand/waseet-emblem.png" alt="وسيط" width={40} height={40} className="rounded-xl bg-white object-contain p-1" priority />
+            <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D9%87%D9%88%D9%8A%D8%A9%20%D9%88%D8%B3%D9%8A%D8%B7%20%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%83%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9-FgzhfqwHFHkAHTdxeqRext2kMmtxI6.png" alt="شعار وسيط لتجارة السكر العالمية" width={48} height={48} className="rounded-xl bg-white object-contain p-1" priority unoptimized />
             <div><p className="text-lg font-extrabold tracking-tight">WASEET</p><p className="text-[11px] text-[#c4d3cf]">منصة الأعمال الموثوقة</p></div>
           </div>
           <button aria-label="إغلاق القائمة" className="lg:hidden" onClick={() => setMenuOpen(false)}><X /></button>
